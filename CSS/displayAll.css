@@ -1,0 +1,120 @@
+.content
+{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 80%;
+
+  
+}
+
+#data,#allUsers,#specificUser, #specificorder {
+  border-collapse: separate;
+  height: 100%;
+  display: block; 
+  /* width: 100%; */
+  overflow-y: auto;
+}
+#data td, #data th,#allUsers td, #allUsers th,#specificUser td,#specificUser th,#specificorder th,#specificorder td{
+  border: 1px solid #ddd;
+  padding: 0px;
+  text-align: center;
+  padding: 8px;
+  font-size: 140%;
+
+}
+#data tr:nth-child(even){background-color: #D5BDAA;}
+#data tr:nth-child(odd){background-color: #D5BDAA;}
+#data tr:hover {background-color: #A18B79;}
+
+#allUsers tr:nth-child(even){background-color: #D5BDAA;}
+#allUsers tr:nth-child(odd){background-color: #D5BDAA;}
+#allUsers tr:hover {background-color: #A18B79;}
+
+#specificUser tr:nth-child(even){background-color: #D5BDAA;}
+#specificUser tr:nth-child(odd){background-color: #D5BDAA;}
+#specificUser tr:hover {background-color: #A18B79;}
+#specificorder tr:nth-child(even){background-color: #D5BDAA;}
+#specificorder tr:nth-child(odd){background-color: #D5BDAA;}
+#specificorder tr:hover {background-color: #A18B79;}
+
+
+#data thead, #data tbody,#allUsers thead, #allUsers tbody,#specificUser thead, #specificUser tbody,#specificorder thead,#specificorder tbody
+{
+  display: block; 
+  font-size: 15px;
+}
+#data th,#allUsers th,#specificUser th,#specificorder th
+{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #43223A;
+  color: whitesmoke;
+  font-size: 20px;
+  
+}
+#data tbody,#allUsers tbody,#specificUser tbody,#specificorder tbody {
+  height: 100%;      
+  overflow-y: auto;   
+  overflow-x: auto; 
+  border-radius: 25px;
+}
+
+.button {
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.deletebtn
+{
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid rgba(244, 67, 54,0.7);
+}
+.deletebtn:hover {
+  background-color:rgba(244, 67, 54,0.7);
+  color: whitesmoke;
+}
+.updatebtn {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid rgba(76, 175, 80,0.7);
+}
+.updatebtn:hover {
+  background-color: rgba(76, 175, 80,0.7);
+  color: whitesmoke;
+}
+.availablebtn {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid rgba(0, 140, 186,0.7);
+}
+.availablebtn:hover {
+  background-color:rgba(0, 140, 186,0.7);
+  color: whitesmoke;
+}
+
+.unavailablebtn {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 2px solid rgba(140, 140, 186,0.7);
+}
+.unavailablebtn:hover {
+  background-color:rgba(50, 50, 50,0.7);
+  color: whitesmoke;
+}
+
+.pageTitle
+{
+  margin-left:22%;
+  margin-bottom:0;
+  margin-top:1%;
+  font-size: 3.5em;
+  color:#9A4D37;
+}
